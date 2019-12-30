@@ -16,24 +16,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100vw;
-  height: calc(100vh - 70%);
+  width: calc(100vw - 42rem);
+  height: auto;
 }
 
 .job-history__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100vw;
-  height: calc(100vh - 70%);
+  width: calc(100vw - 42rem);
+  height: auto;
 }
 
 .education__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100vw;
-  height: calc(100vh - 70%);
+  width: calc(100vw - 42rem);
+  height: auto;
 }
 
 .App-logo {
