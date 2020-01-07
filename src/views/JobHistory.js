@@ -3,7 +3,7 @@ import React from 'react'
 export default function JobHistory(props) {
     return (
         <div className={props.className}>
-            <body class="vscode-light">
+            <body className="vscode-light">
                 <h2 id="zachary-edwards"><strong>Zachary Edwards</strong></h2>
                 <h3 id="full-stack-developer"><strong>Full Stack Developer</strong></h3>
                 <p><strong>Address:</strong> 1201 Acorn Lane Richmond, VA 23225<br/>
