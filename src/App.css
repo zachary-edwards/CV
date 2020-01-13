@@ -8,14 +8,13 @@ body,html {
 }
 
 .app-wrapper {
-  height: calc(100vh - 1rem);
+  height: 100%;
   width: calc(100vw - 2rem);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   flex-flow: column;
   overflow-y: scroll;
-  flex-grow: 2;
 }
 
 .about-me__wrapper {
@@ -79,6 +78,20 @@ body,html {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('./imgs/dsc_0733.jpg');
+
+  /* Full height */
+  height: 380px;
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App-header {
