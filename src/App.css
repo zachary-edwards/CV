@@ -1,5 +1,6 @@
 body,html {
   height: 100%;
+  font: 400 15px/1.8 "Lato", sans-serif;
 }
 
 .app-content {
@@ -9,7 +10,7 @@ body,html {
 
 .app-wrapper {
   height: 100%;
-  width: calc(100vw - 2rem);
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -17,60 +18,63 @@ body,html {
   overflow-y: scroll;
 }
 
-.about-me__wrapper {
+.content__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: calc(100vw - 25rem);
   height: auto;
+  min-width: 287px;
+}
+
+.about-me__wrapper {
   flex: 1 0 auto;
   align-content: flex-start;
 }
 
-.job-history__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: calc(100vw - 25rem);
-  height: auto;
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #6F603F;
 }
 
-.education__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: calc(100vw - 25rem);
-  height: auto;
+.caption span.border {
+  background-color: #BEA36E;
+  color: #F4F2E2;
+  padding: 20px;
+  font-size: 25px;
+  letter-spacing: 4px;
 }
-.about-me__wrapper, .job-history__wrapper, .education__wrapper {
-  min-width: 287px;
-}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 @media only screen and (max-width: 1100px) {
-  .about-me__wrapper, .job-history__wrapper, .education__wrapper {
+  .content__wrapper {
     width: calc(100vw - 22rem);
   }
 }
 @media only screen and (max-width: 1000px) {
-  .about-me__wrapper, .job-history__wrapper, .education__wrapper {
+  .content__wrapper {
     width: calc(100vw - 20rem);
   }
 }
 @media only screen and (max-width: 900px) {
-  .about-me__wrapper, .job-history__wrapper, .education__wrapper {
+  .content__wrapper {
     width: calc(100vw - 18rem);
   }
 }
 @media only screen and (max-width: 720px) {
-  .about-me__wrapper, .job-history__wrapper, .education__wrapper {
+  .content__wrapper {
     width: calc(100vw - 15rem);
   }
 }
 @media only screen and (max-width: 360px) {
-  .about-me__wrapper, .job-history__wrapper, .education__wrapper {
+  .content__wrapper {
     width: calc(100vw - 3rem);
   }
 }
@@ -85,7 +89,7 @@ body,html {
   background-image: url('./imgs/dsc_0733.jpg');
 
   /* Full height */
-  height: 380px;
+  height: 100vh;
   width: 100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
