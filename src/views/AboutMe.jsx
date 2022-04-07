@@ -3,7 +3,8 @@ import React from 'react'
 export default function AboutMe(props) {
     return (
         <div className="about-me__wrapper content__wrapper">
-            <h3 id="hi-im-zach-edwards">Hi, I'm <strong>Zach Edwards</strong></h3>
+            <h3 style={{flexBasis: "content"}}>Hi, I'm <strong>Zach Edwards</strong></h3>
+            <br/>
             <p>I'm in the process of building this website to increase my skillset with react. I want a way to showcase my personality and push my self in design and implementation. Ideally, if this all works out well, I can use this as my resume and start to <em>freelance</em>.</p>
             <p>I have some dreams for what this website is likely to become and some features that I would like to share with you in no particaluar order.</p>
             <ul>

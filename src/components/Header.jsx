@@ -20,12 +20,12 @@ export default function Header() {
 
             // const caption = document.getElementById("caption")
             // caption.style.height = '0px'
-            const header = document.getElementById("header")
+            // const header = document.getElementById("header")
             //header.style.backgroundImage = "../imgs/dsc_0733.jpg"
         } else {
-            const parallax = document.getElementById("parallax")
-            parallax.style.height = '100vh'
-            parallax.style.position = ''
+            // const parallax = document.getElementById("parallax")
+            // parallax.style.height = '100vh'
+            // parallax.style.position = ''
         }
     }
     return (
