@@ -2,38 +2,28 @@ import React, { useEffect } from "react";
 import './header.css'
 
 export default function Header() {
+  useEffect(() => {
+    scrollToDiv(window.location.hash.substring(1))
+  }, [window.location.hash])
 
-    let loaded = false
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
-        loaded = true;
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        }
-    }, [])
+  const onClick = (id) => (event) => {
+    scrollToDiv(id)
+  }
 
-    const handleScroll = (event) => {
-        if (window.scrollY + 50 > window.innerHeight && loaded) {
-            // const parallax = document.getElementById("parallax")
-            // parallax.style.height = '50px'
-            // parallax.style.position = 'fixed'
+  const scrollToDiv = (id) => {
+    const element = document.getElementById(id)
+    if (!element) return;
+    const top = element.getBoundingClientRect().top + window.pageYOffset - 50 ;
+    console.log(top)
+    window.scrollTo({ top: top, behavior: 'smooth' })
+  }
 
-            // const caption = document.getElementById("caption")
-            // caption.style.height = '0px'
-            // const header = document.getElementById("header")
-            //header.style.backgroundImage = "../imgs/dsc_0733.jpg"
-        } else {
-            // const parallax = document.getElementById("parallax")
-            // parallax.style.height = '100vh'
-            // parallax.style.position = ''
-        }
-    }
-    return (
-        <div id="header" className="header">
-            <div className="header--item">About Me</div>
-            <div className="header--item">Job History</div>
-            <div className="header--item">Education</div>
-            <div className="header--item">Contact</div>
-        </div>
-    )
+  return (
+    <div id="header" className="header">
+      <div className="header--item" onClick={onClick("about")}>About Me</div>
+      <div className="header--item" onClick={onClick("job")}>Job History</div>
+      <div className="header--item" onClick={onClick("education")}>Education</div>
+      <div className="header--item" onClick={onClick("contact")}>Contact</div>
+    </div>
+  )
 }

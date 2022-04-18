@@ -19,34 +19,31 @@ body,html {
 }
 
 .content__wrapper {
+  height: auto;
+  width: calc(100vw - 25rem);
+  min-width: 287px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  width: calc(100vw - 25rem);
-  height: auto;
-  min-width: 287px;
-}
-
-.about-me__wrapper {
-  flex: 1 0 auto;
-  align-content: flex-start;
 }
 
 .caption {
   z-index: 1;
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 45%;
   width: 100%;
   text-align: center;
   color: #6F603F;
 }
 
 .caption span.border {
-  background-color: #BEA36E;
+  /* background-color: #BEA36E; */
   color: #F4F2E2;
   padding: 20px;
-  font-size: 25px;
+  font-size: 80px;
   letter-spacing: 4px;
 }
 

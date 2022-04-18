@@ -12,5 +12,7 @@
 }
 
 .header--item {
-    margin: auto
+    margin: auto;
+    cursor: pointer;
+    padding: 5px; 
 }

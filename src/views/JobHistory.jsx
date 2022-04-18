@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function JobHistory(props) {
     return (
-        <div className="content__wrapper">
-            <body className="vscode-light">
+        <div id="job" className="content__wrapper">
+            <div className="vscode-light">
                 <h2 id="zachary-edwards"><strong>Zachary Edwards</strong></h2>
                 <h3 id="full-stack-developer"><strong>Full Stack Developer</strong></h3>
                 <p><strong>Address:</strong> 1201 Acorn Lane Richmond, VA 23225<br/>
@@ -46,7 +46,7 @@ export default function JobHistory(props) {
                 <p><strong>Virginia Commonwealth University</strong><br/>
                 2012-08 - 2016-12</p>
                 <p>Bachelor Degree in Mathematics with a concentration of Applied Mathematics with a minor in physics. Graduated Cum Laude.</p>
-            </body>
+            </div>
         </div>
     )
 }
